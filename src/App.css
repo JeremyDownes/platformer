@@ -9,19 +9,54 @@
   height: 100vmin;
   width: 100vw;
   background-color: grey;
+  background-image: url('./resources/images/download.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
 }
 
 .player {
   position: absolute;
-  height: 5rem;
-  width: 5rem;
-  background-color: red;
+  height: 7rem;
+  width: 7rem;
   z-index: 1;
+  transform: translateX(-4.5rem) translateY(-2rem);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.standing {
+  background-image: url('./resources/images/run.gif');
+}
+
+.running-right {
+  background-image: url('./resources/images/run-right.gif');
+}
+
+.running-left {
+  background-image: url('./resources/images/run-left.gif');
 }
 
 .platform {
 	position: absolute;
 	height: .5rem;
-	width: 5rem;
+	width: 1rem;
 	background-color: black;
+  transform: translateX(-.5rem);
 }
+
+.star{ 
+  height: 5rem;
+  width: 5rem;
+  background-image: url('./resources/images/star.png');
+  background-size: cover;
+  position: absolute;
+  top: 45rem;
+  left: 164rem;
+
+ }
